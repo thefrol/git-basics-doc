@@ -44,6 +44,34 @@ rm -rf .git
 
 ## git status
 
+Эта команда используется, чтобы узнать текущий статус файлов в репозитории:
++ Инициализирован ли репозиторий
++ какая ветвь активна
++ Какие файлы отслеживаются
++ какие будут добавлены в коммит
++ а какие не будут
+ — вот на такие вопросы поможет ответить `git status`
+
+ ```bash
+On branch master // ветвь называется master
+Your branch is up to date with 'origin/master'. // синхронизирована с удаленным репозиторием
+
+Changes not staged for commit: // изменения, которые не войдут в коммит
+  (use "git add <file>..." to update what will be committed) // подсказки
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md // вот этот файл, что вы читаете изменен, но в коммит не добавлен пока
+
+no changes added to commit (use "git add" and/or "git commit -a") // содержание коммита
+ ```
+
+А если, например, запустить в каталоге, в котором нет репозитория получим вот такое сообщения об ошибке
+
+```bash
+fatal: not a git repository (or any of the parent directories): .git
+```
+
+## Изменения и коммиты
+
 ## Добавление файла `git add`
 
 Чтобы подготовить файл к оправке в репозиторий, нужно воспользоваться коммандой `git add`, например
