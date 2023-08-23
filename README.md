@@ -175,15 +175,28 @@ git log --oneline
 + `HEAD` -> master, origin/master, origin/HEAD — ветки с изменениями,
 + и далее сообщение коммита
 
-# SSH
+## Статусы файлов
+
+`modified`+`git add` = `staged`.
+
+# Удаленные репозитории
+
+Пара слов о github
+
+## SSH
+
 
 ## добавление удаленного репозитория `git add remote`
 
+
 ## отправка `git push`
+
 
 # Правила хорошего тона
 
+
 ## README.md
+
 
 ## Сообщения коммитов
 
