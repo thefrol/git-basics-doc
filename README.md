@@ -200,6 +200,17 @@ git log --oneline
 `modified` + `git commit` = `modified` // изменения не добавлены в индекс, это нужно дополнительно сделать командой `git add`
 `untracked` + `git commit` = `untracked`
 
+Жизненный цикл файла в репозитории можно было бы изобразить вот так
+
+```mermaid
+graph LR;
+    untracked -- "git add" --> staged;
+    tracked -- "изменения" --> modified;
+    staged -- "git commit" --> tracked;
+    modified -- "git add" --> staged;
+    staged -- "изменения" --> modified;
+
+```
 
 # Удаленные репозитории
 
