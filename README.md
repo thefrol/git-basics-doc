@@ -266,7 +266,7 @@ git add remote origin https://github.com/thefrol/git-basics-doc
 
 ## Отправка `git push`
 
-При первом запуске надо связать ветку и репозиторий
+При первом запуске надо связать ветку и репозиторий, после чего все коммиты отправятся на сервер
 
 ```bash
 git push -u origin main
